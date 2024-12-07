@@ -4,7 +4,7 @@
 brew install ghc
 ```
 
-It installs 2 things:
+It comes with 2 programs:
 
 1. `ghc`: (Glasgow Haskell Compiler)
 2. `ghci`: REPL (Read-Eval-Print Loop) for Haskell
@@ -13,12 +13,13 @@ Just run `ghci` in the terminal to start the REPL.
 
 To quit the REPL, type `:quit` or `:q`. (But I just do `ctrl + d`, haha)
 
+Note: the offical haskell recommend using [GHCup](https://www.haskell.org/ghcup/) as installer, but I have trouble installing it on my Mac. So fuck it.
+
 ### try out ghci
 
 ```haskell
 -- this is a comment, no `;` at the end
 print "Hello, World!"
-
 -- declare var
 greeting = "Hello, World!"
 print greeting
@@ -79,3 +80,11 @@ It'll generate 3 files:
 1. `main`: executable
 2. `main.hi`: intermediate file (like a header/declaration file?)
 3. `main.o`: object file (for linking)
+
+### read an intro book
+
+In Haskell's [official website](https://www.haskell.org/documentation/), there's a list of books and tutorials:
+
+This is the book I'm reading: [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+
+Learning from this book will be covered in `basic-topics` folder.
