@@ -23,6 +23,42 @@ print "Hello, World!"
 -- declare var
 greeting = "Hello, World!"
 print greeting
+-- get user input
+print "What's your name"
+name <- getLine
+print "Hello " ++ name
+```
+
+- operators
+
+```haskell
+True && False
+False || True
+
+1 == 2
+1 /= 2 -- not equal
+
+2 > 1
+1 <= 2
+
+2 - 1
+2 + 1
+2 * 3
+5 / 2 -- 2.5
+6 / 2 -- 3.0
+
+mod 5 2
+div 5 2 -- 2
+
+2 ^ 3
+
+ceiling 3.4
+floor 3.4
+round 3.4
+round 3.5
+
+max 2 4
+min 2 4
 ```
 
 - add
