@@ -15,7 +15,6 @@ To quit the REPL, type `:quit` or `:q`. (But I just do `ctrl + d`, haha)
 
 ### try out ghci
 
-
 ```haskell
 -- this is a comment, no `;` at the end
 print "Hello, World!"
