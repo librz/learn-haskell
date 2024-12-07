@@ -41,3 +41,6 @@ main = do
                 z = 3
             in x + y + z
   print sum
+
+  let s = [ 2*x | x <- [0..], x^2 > 3 ]
+  print $ head s
