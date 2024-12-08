@@ -13,6 +13,15 @@ Just run `ghci` in the terminal to start the REPL.
 
 To quit the REPL, type `:quit` or `:q`. (But I just do `ctrl + d`, haha)
 
+To write multiple line code in the REPL, use `:{` and `:}`.
+
+```haskell
+:{
+add :: Int -> Int -> Int
+add x y = x + y
+:}
+```
+
 Note: the offical haskell recommend using [GHCup](https://www.haskell.org/ghcup/) as installer, but I have trouble installing it on my Mac. So fuck it.
 
 ### try out ghci
