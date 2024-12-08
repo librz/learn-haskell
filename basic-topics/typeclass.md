@@ -24,4 +24,12 @@ If u know TypeScript, `Num a` looks like `T extends number`.
 
 Why the infered typeclass is `Num`? Well, because `+`'s operand must be a number.
 
-###
+### common typeclasses
+
+- `Eq`: for types that can be compared for equality
+- `Ord`: for types that can be compared for ordering
+- `Show`: for types that can be converted to strings
+- `Read`: for types that can be converted from strings
+- `Num`: for numeric types
+- `Integral`: for integral numbers
+- `Floating`: for floating-point numbers
