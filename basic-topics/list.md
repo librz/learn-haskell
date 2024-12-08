@@ -75,3 +75,18 @@ lastname = "Ren"
 fullname = name ++ " " ++ lastname
 print fullname
 ```
+
+### nature of list (linked list)
+
+Prepending an element to a list is O(1) operation.
+
+```haskell
+nums = [1, 2, 3]
+allnums = 0 : nums
+```
+
+This is list is implemented as a **linked list**. To prepend an element to a list, Haskell just creates a new node and points it to the old list.
+
+The statement `nums = [1, 2, 3]` is actually syntactic sugar for `nums = 1 : 2 : 3 : []`.
+
+This also explains why Haskell has no built-in support for *appending* an element to a list. Appending an element to a list is O(n) operation since Haskell has to traverse the whole list to find the last element.
