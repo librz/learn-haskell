@@ -22,6 +22,17 @@ inBetween x y z = let lower = min x y
                       upper = max x y
                   in z >= lower && z <= upper
 
+count :: Int -> String
+count x = "You did it " ++ case x of
+    1 -> "once"
+    2 -> "twice"
+    _ -> show x ++ " times" -- `show` converts a value to a string
+
+initials :: String -> String -> String
+initials first last = [f] ++ ". " ++ [l] ++ "."
+    where (f:_) = first
+          (l:_) = last
+
 main = do
   -- print (factorial 3)
   -- print $ increment $ add (increment 2) $ factorial 3
@@ -42,5 +53,6 @@ main = do
             in x + y + z
   print sum
 
-  let s = [ 2*x | x <- [0..], x^2 > 3 ]
-  print $ head s
+  print $ count 4
+
+  print $ initials "Patrick" "Ren"
