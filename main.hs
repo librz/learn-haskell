@@ -28,11 +28,6 @@ count x = "You did it " ++ case x of
     2 -> "twice"
     _ -> show x ++ " times" -- `show` converts a value to a string
 
-initials :: String -> String -> String
-initials first last = [f] ++ ". " ++ [l] ++ "."
-    where (f:_) = first
-          (l:_) = last
-
 main = do
   -- print (factorial 3)
   -- print $ increment $ add (increment 2) $ factorial 3
@@ -54,5 +49,3 @@ main = do
   print sum
 
   print $ count 4
-
-  print $ initials "Patrick" "Ren"
