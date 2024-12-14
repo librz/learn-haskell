@@ -1,4 +1,4 @@
-### setup
+### setup the compiler and REPL
 
 ```bash
 brew install ghc
@@ -22,7 +22,14 @@ add x y = x + y
 :}
 ```
 
-Note: the offical haskell recommend using [GHCup](https://www.haskell.org/ghcup/) as installer, but I have trouble installing it on my Mac. So fuck it.
+### setup ghcup
+
+The offical haskell recommend using [GHCup](https://www.haskell.org/ghcup/) as installer.
+
+My experience installing ghcup is not that smooth:
+
+1. the doc recommend using `curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh` for downloading the install shell script and running it. Somehow it didn't work for me, after removing the `--tlsv1.2` part, it worked.
+2. you may need to manually append the path(usually `~/.ghcup/bin`) to the `PATH` variable in your shell profile file.
 
 ### try out ghci
 

@@ -1,4 +1,4 @@
-### let
+### let (used alone: statement)
 
 In Haskell, `let` is used to define variables in a local scope. It's similar to `let` in math.
 
@@ -9,7 +9,7 @@ main = do
   print x
 ```
 
-### let in
+### let in (used together: expr)
 
 `let in` produces a value(assigned to a variable) in the `in` part. So `let in` is an expression.
 
